@@ -199,6 +199,120 @@ a:hover                        { text-decoration:none; }
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+	.primary-search {
+		padding-top: 10px;
+		background: #dfe6ec;
+	}
+		.name-box {
+			display: block;
+			padding: 2px 0 1px 20px;
+			font: 16px 'SkodaPro_Bold';;
+			background: #fff;
+
+			-webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.34);
+			-moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.34);
+			box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.34);
+		}
+		.list-search {
+			padding: 10px 0 10px 20px;
+		}
+			.list-search li {
+				display: table;
+				margin-bottom: 15px;
+			}
+				.list-search .text1,
+				.list-search .text2,
+				.list-search .input,
+				.list-search .select {
+					display: table-cell;
+					vertical-align: middle;
+				}
+					.list-search .text1 span {
+						display: block;
+						min-width: 50px;
+						margin-right: 5px;
+					}
+				.list-search .input {
+					position: relative;
+				}
+					.list-search .input:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 1px;
+						right: 21px;
+						width: 25px;
+						height: 26px;
+						background: url("../images/content/icon_calendar.png") no-repeat right center;
+						cursor: pointer;
+					}
+					.list-search .input input {
+						width: 90px;
+						height: 26px;
+						line-height: 26px;
+						padding: 0 25px 0 10px;
+						margin-right: 20px;
+						border: 1px solid #a7b0b8;
+
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						border-radius: 3px;
+
+						-webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+						-moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+						box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					}
+					.list-search .text2 span {
+						display: block;
+						margin-right: 5px;
+					}
+				.list-search .select {
+					position: relative;
+				}
+					.list-search .select:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 0;
+						right: 20px;
+						width: 25px;
+						height: 26px;
+						background: url("../images/content/select_icon.png") no-repeat right center;
+					}
+					.list-search .select select {
+						width: 175px;
+						margin-right: 20px;
+						height: 26px;
+						line-height: 26px;
+						border: 1px solid #a7b0b8;
+
+						-webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+						-moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+						box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					}
+					.list-search .select-big select {
+						width: 310px;
+					}
+				.list-search .text-area {
+					display: inline-table;
+					margin: 5px 20px 0 0;
+					vertical-align: top;
+				}
+				.list-search .textarea {
+					width: 447px;
+					height: 70px;
+					padding: 5px 10px;
+					border: 1px solid #a7b0b8;
+					resize: none;
+
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+
+					-webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					-moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+				}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
