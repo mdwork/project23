@@ -34,7 +34,7 @@
         </div><!--end SHADOW-->
 
         <div class="wrap">
-            <ul class="side-menu">
+            <ul id="side-menu" class="side-menu">
                 <li class="active active-block">
                     <span class="main-item">Анализ работы депо</span>
 
@@ -212,9 +212,40 @@
 
                         <li>
                             <span class="text1">Поиск по тексту</span>
-                            <textarea class="textarea" placeholder="Введите, ваш коментарий."></textarea>
+                            <input type="text" class="search-input" placeholder="Введите, что ищете, например: сцепка кску-9">
+                            <span class="btn-close">close</span>
+                        </li>
+
+                        <li>
+                            <span class="text1">Расположение датчика</span>
+
+                            <ul class="list-btn-position">
+                                <li>
+                                    <span class="text">Все</span>
+                                </li>
+
+                                <li>
+                                    <span class="text">Перед</span>
+                                </li>
+
+                                <li>
+                                    <span class="text">Зад</span>
+                                </li>
+
+                                <li>
+                                    <span class="text">Верх</span>
+                                </li>
+
+                                <li>
+                                    <span class="text">Низ</span>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
+                </div>
+
+                <div class="bottom-add-search">
+                    <button id="add-param" class="btn-add-param"></button>
                 </div>
             </div>
         </div><!--end WRAP-->
