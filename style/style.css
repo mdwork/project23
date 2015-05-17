@@ -114,6 +114,7 @@ a:hover                        { text-decoration:none; }
 	background: rgba(0, 0, 0, .6);
 }
 .wrap {
+	overflow: hidden;
 	width: 980px;
 	margin: 0 auto;
 }
@@ -188,11 +189,91 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.content {
+	overflow: hidden;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.side-menu {
+	float: left;
+	width: 310px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	background: #fff;
 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+	.side-menu li {
+		position: relative;
+	}
+		.side-menu > li:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 5px;
+			width: 100%;
+
+			-webkit-box-shadow: inset 0px -4px 4px -1px rgba(51,51,51,0.2);
+			-moz-box-shadow: inset 0px -4px 4px -1px rgba(51,51,51,0.2);
+			box-shadow: inset 0px -4px 4px -1px rgba(51,51,51,0.2);
+		}
+		.sub-menu-side {
+			display: none;
+		}
+		.active-block .sub-menu-side {
+			display: block;
+		}
+		.active .sub-menu-side {
+			-webkit-box-shadow: inset 0px 4px 4px -1px rgba(51,51,51,0.45);
+			-moz-box-shadow: inset 0px 4px 4px -1px rgba(51,51,51,0.45);
+			box-shadow: inset 0px 4px 4px -1px rgba(51,51,51,0.45);
+		}
+			.side-menu .main-item {
+				display: block;
+				padding: 5px 5px 5px 40px;
+				color: #fff;
+				font: 16px 'SkodaPro_Medium';
+				background: #1b9f50 url("../images/content/menu_icon.png") no-repeat 10px 8px;
+				border-left: 1px solid #43d16a;
+				border-top: 1px solid #43d16a;
+				border-right: 1px solid #289741;
+				border-bottom: 1px solid #289741;
+				cursor: pointer;
+
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+			}
+			.side-menu .active .main-item {
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+				color: #333;
+				border: 1px solid #fff;
+				background: url("../images/content/menu_icon_active.png") no-repeat 10px 8px;
+			}
+			.sub-menu-side {
+				-webkit-box-shadow: inset 0px 2px 3px 0px rgba(153,153,153,0.2);
+				-moz-box-shadow: inset 0px 2px 3px 0px rgba(153,153,153,0.2);
+				box-shadow: inset 0px 2px 3px 0px rgba(153,153,153,0.2);
+			}
+				.sub-menu-side li {
+					border-bottom: 1px solid #d9d9d9;
+				}
+					.sub-menu-side a {
+						display: block;
+						color: #333;
+						padding: 5px 5px 5px 40px;
+						font: 16px 'SkodaPro_Medium';
+						text-decoration: none;
+
+						-webkit-transition: 0.3s;
+						transition: 0.3s;
+					}
+					.sub-menu-side a:hover {
+						background: #ceddec;
+					}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
