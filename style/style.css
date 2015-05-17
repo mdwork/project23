@@ -191,6 +191,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .content {
 	overflow: hidden;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     background: #fff;
 
@@ -205,6 +206,7 @@ a:hover                        { text-decoration:none; }
 	float: left;
 	width: 310px;
 	margin-right: 20px;
+    margin-bottom: 20px;
 	border: 1px solid #ccc;
 	background: #fff;
 
