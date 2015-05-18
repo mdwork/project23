@@ -453,8 +453,84 @@ a:hover                        { text-decoration:none; }
                         border-radius: 3px;
                     }
     .bottom-add-search {
+        position: relative;
+        overflow: hidden;
         margin-bottom: 20px;
     }
+        .wrap-btn-add {
+            float: left;
+            padding: 12px 25px 9px 0;
+            border-bottom: 1px solid #d0d4d9;
+        }
+            .btn-add-param {
+                font-size: 14px;
+                padding: 0;
+                margin-left: 20px;
+                color: #3b79b5;
+                border: none;
+                border-bottom: 1px dashed #3b79b5;
+                background: none;
+            }
+            .btn-add-param:hover {
+                border-bottom: 1px solid #fff;
+            }
+            .wrap-btn-add:after {
+                display: inline-block;
+                content: '';
+                width: 5px;
+                height: 10px;
+                margin-left: 5px;
+                background: url("../images/content/triagle_top.png") no-repeat;
+            }
+        .wrap-btn-blue {
+            float: right;
+            width: 384px;
+            padding: 7px 0 15px;
+            border-top: 1px solid #d0d4d9;
+            text-align: right;
+        }
+            .bottom-add-search:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 250px;
+                width: 12px;
+                height: 41px;
+                background: url("../images/content/curve.png") no-repeat;
+            }
+            .btn-blue:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 7px;
+                right: 15px;
+                width: 16px;
+                height: 16px;
+                background: url("../images/content/icon_search_white.png") no-repeat;
+            }
+            .btn-blue {
+                position: relative;
+                padding: 0 45px 0 20px;
+                margin-right: 20px;
+                font: 16px 'SkodaPro_Medium';
+                color: #fff;
+                height: 30px;
+                line-height: 30px;
+                background: url("../images/content/btn_blue.jpg") repeat-x;
+                background-size: 100% 100%;
+                border: 1px solid #d0d4d9;
+
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+            .btn-blue:hover {
+                background-image: url("../images/content/btn_blue_hover.jpg");
+            }
+            .btn-blue:active {
+                background-image: url("../images/content/btn_blue_active.jpg");
+            }
 
     .main-content {
         margin: 0 20px;
