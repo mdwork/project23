@@ -278,7 +278,8 @@ a:hover                        { text-decoration:none; }
 						width: 25px;
 						height: 26px;
 						background: url("../images/content/select_icon.png") no-repeat right center;
-					}
+                        pointer-events: none;
+                    }
 					.list-search .select select {
 						width: 175px;
 						margin-right: 20px;
