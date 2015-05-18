@@ -468,7 +468,10 @@ a:hover                        { text-decoration:none; }
                 width: 5px;
                 height: 10px;
                 margin-left: 5px;
-                background: url("../images/content/triagle_top.png") no-repeat;
+                background: url("../images/content/triagle_bottom.png") no-repeat;
+            }
+            .wrap-btn-add.active:after {
+                background-image: url("../images/content/triagle_top.png");
             }
         .wrap-btn-blue {
             float: right;

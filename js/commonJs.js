@@ -21,4 +21,9 @@ $(document).ready(function(){
     });
 
     $($.date_input.initialize);
+
+    $('#add-param').click(function(){
+        $('#add-search').slideToggle();
+        $(this).parent().toggleClass('active');
+    });
 });
