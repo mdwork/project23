@@ -421,20 +421,31 @@ a:hover                        { text-decoration:none; }
             }
                 .list-btn-position li {
                     float: left;
-                    margin: 0 7px;
+                    margin: 0 10px;
                 }
-                .list-btn-position li:hover {
-                    margin: 0 1px;
+                .list-btn-position li:hover,
+                .list-btn-position .active {
+                    margin: 0 4px;
                 }
                     .list-btn-position .text {
                         display: inline-block;
+                        padding-top: 2px;
                         line-height: 18px;
                         color: #3b79b5;
                         border-bottom: 1px dashed #3b79b5;
                         cursor: pointer;
                     }
-                    .list-btn-position .text:hover {
-                        padding: 2px 5px;
+                    .list-btn-position .active .text {
+                        background: #3b79b5;
+                        color: #fff;
+
+                        -webkit-box-shadow: inset 0 3px 12px 0 rgba(0,0,0,0.2);
+                        -moz-box-shadow: inset 0 3px 12px 0 rgba(0,0,0,0.2);
+                        box-shadow: inset 0 3px 12px 0 rgba(0,0,0,0.2);
+                    }
+                    .list-btn-position .text:hover,
+                    .list-btn-position .active .text {
+                        padding: 1px 5px 3px;
                         border: 1px solid #3b79b5;
 
                         -webkit-border-radius: 3px;
@@ -444,6 +455,31 @@ a:hover                        { text-decoration:none; }
     .bottom-add-search {
         margin-bottom: 20px;
     }
+
+    .main-content {
+        margin: 0 20px;
+    }
+        .main-content h2 {
+            font-size: 18px;
+            font-family: 'SkodaPro_Bold';
+            margin-bottom: 10px;
+        }
+        .main-content p {
+            margin-bottom: 20px;
+        }
+        .main-content h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-family: 'SkodaPro_Bold';
+        }
+        .main-content ul {
+            margin: 0 0 20px 15px;
+        }
+            .main-content ul li {
+                margin-bottom: 15px;
+                padding-left: 10px;
+                list-style-image: url("../images/content/icon_list.png");
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
