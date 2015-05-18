@@ -327,32 +327,54 @@ a:hover                        { text-decoration:none; }
 				margin-right: 15px;
 				color: #3b79b5;
 			}
-				.btn-radio {
-					position: relative;
-					display: inline-block;
-					width: 18px;
-					height: 18px;
-					text-indent: -9999px;
-				}
-					.btn-radio:before {
-						content: '';
-						display: inline-block;
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 16px;
-						height: 16px;
-						border: 1px solid #a7b0b8;
+                .list-btn-radio li label {
+                    cursor: pointer;
+                }
+                    .btn-radio {
+                        position: relative;
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        text-indent: -9999px;
+                    }
+                        .btn-radio:before {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
+                            width: 13px;
+                            height: 13px;
+                            border: 1px solid #a7b0b8;
 
-						-webkit-border-radius: 20px;
-						-moz-border-radius: 20px;
-						border-radius: 20px;
-					}
-					.active.btn-radio:before {
-						width: 8px;
-						height: 8px;
-						border: 5px solid #3b79b5;
-					}
+                            -webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+                            -moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+                            box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+
+                            -webkit-border-radius: 20px;
+                            -moz-border-radius: 20px;
+                            border-radius: 20px;
+                        }
+                        .active.btn-radio:before {
+                            width: 7px;
+                            height: 7px;
+                            border: 4px solid #3b79b5;
+                        }
+                    .list-btn-radio .text {
+                        display: inline-block;
+                        line-height: 18px;
+                        border-bottom: 1px dashed #3b79b5;
+                    }
+                    .list-btn-radio label:hover .text,
+                    .list-btn-radio .active + .text {
+                        border-bottom: none;
+                    }
+                    .list-btn-radio .active .btn-radio:before,
+                    .list-btn-radio label:hover .btn-radio:before {
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                    }
 			.wrap-input-search {
 				display: inline-block;
 			}
@@ -380,6 +402,7 @@ a:hover                        { text-decoration:none; }
 					margin-left: 10px;
 					text-indent: -9999px;
 					vertical-align: middle;
+                    cursor: pointer;
 				}
 					.btn-close:after {
 						content: '';
@@ -391,6 +414,33 @@ a:hover                        { text-decoration:none; }
 						height: 12px;
 						background: url("../images/content/icon_close.png") no-repeat;
 					}
+            .list-btn-position {
+                overflow: hidden;
+                height: 24px;
+                margin-left: 10px;
+            }
+                .list-btn-position li {
+                    float: left;
+                    margin: 0 7px;
+                }
+                .list-btn-position li:hover {
+                    margin: 0 1px;
+                }
+                    .list-btn-position .text {
+                        display: inline-block;
+                        line-height: 18px;
+                        color: #3b79b5;
+                        border-bottom: 1px dashed #3b79b5;
+                        cursor: pointer;
+                    }
+                    .list-btn-position .text:hover {
+                        padding: 2px 5px;
+                        border: 1px solid #3b79b5;
+
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
