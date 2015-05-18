@@ -216,7 +216,7 @@ a:hover                        { text-decoration:none; }
 		.list-search {
 			padding: 10px 0 10px 20px;
 		}
-			.list-search li {
+			.list-search > li {
 				display: table;
 				margin-bottom: 15px;
 			}
@@ -313,6 +313,84 @@ a:hover                        { text-decoration:none; }
 					-moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
 					box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
 				}
+	.add-search {
+
+	}
+		.list-btn-radio {
+			overflow: hidden;
+			display: table-cell;
+			padding-left: 20px;
+			vertical-align: middle;
+		}
+			.list-btn-radio li {
+				float: left;
+				margin-right: 15px;
+				color: #3b79b5;
+			}
+				.btn-radio {
+					position: relative;
+					display: inline-block;
+					width: 18px;
+					height: 18px;
+					text-indent: -9999px;
+				}
+					.btn-radio:before {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 16px;
+						height: 16px;
+						border: 1px solid #a7b0b8;
+
+						-webkit-border-radius: 20px;
+						-moz-border-radius: 20px;
+						border-radius: 20px;
+					}
+					.active.btn-radio:before {
+						width: 8px;
+						height: 8px;
+						border: 5px solid #3b79b5;
+					}
+			.wrap-input-search {
+				display: inline-block;
+			}
+				.list-search .search-input {
+					width: 425px;
+					height: 26px;
+					line-height: 26px;
+					padding: 0 10px;
+					margin-left: 20px;
+					border: 1px solid #a7b0b8;
+
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+
+					-webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					-moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+					box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+				}
+				.btn-close {
+					position: relative;
+					display: inline-block;
+					width: 12px;
+					height: 12px;
+					margin-left: 10px;
+					text-indent: -9999px;
+					vertical-align: middle;
+				}
+					.btn-close:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 12px;
+						height: 12px;
+						background: url("../images/content/icon_close.png") no-repeat;
+					}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
