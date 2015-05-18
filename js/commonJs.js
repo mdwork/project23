@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.main-item').on('click', function(){
+    $('.main-item').click(function(){
         $this = $(this).parent();
 
         $this.find('.sub-menu-side').slideToggle(function(){
@@ -9,14 +9,16 @@ $(document).ready(function(){
         $this.toggleClass('active');
     });
 
-    $('.btn-radio input').on('change', function(){
+    $('.btn-radio input').change(function(){
         $(this).closest('.list-btn-radio').find('.btn-radio').removeClass('active');
         $(this).parent().toggleClass('active');
     });
 
-    $('.list-btn-position li').on('click', function(){
+    $('.list-btn-position li').click(function(){
         $(this).siblings().removeClass('active');
 
         $(this).addClass('active');
     });
+
+    $($.date_input.initialize);
 });

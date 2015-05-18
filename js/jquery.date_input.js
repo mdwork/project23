@@ -12,9 +12,9 @@ function DateInput(el, opts) {
   this.hide();
 };
 DateInput.DEFAULT_OPTS = {
-  month_names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-  short_month_names: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  short_day_names: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  month_names: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+  short_month_names: ["Янв", "Фев", "Мар", "Апр", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"],
+  short_day_names: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
   start_of_week: 1
 };
 DateInput.prototype = {
