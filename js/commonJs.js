@@ -32,7 +32,7 @@ $(document).ready(function(){
         $('#box_1').fadeIn(300);
     });
 
-    $('#bg-popup').click(function () {
+    $('#bg-popup, .close-btn-popup').click(function () {
         $('#bg-popup').fadeOut(300);
         $('#box_1').fadeOut(300);
     });
