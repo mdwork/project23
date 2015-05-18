@@ -239,7 +239,7 @@ a:hover                        { text-decoration:none; }
 						padding: 0 25px 0 10px;
 						margin-right: 20px;
 						border: 1px solid #a7b0b8;
-                        background: url("../images/content/icon_calendar.png") no-repeat right center;
+                        background: #fff url("../images/content/icon_calendar.png") no-repeat right center;
 
                         -webkit-border-radius: 3px;
 						-moz-border-radius: 3px;
@@ -490,7 +490,7 @@ a:hover                        { text-decoration:none; }
                 height: 41px;
                 background: url("../images/content/curve.png") no-repeat;
             }
-            .btn-blue:after {
+            .bottom-add-search .btn-blue:after {
                 content: '';
                 display: block;
                 position: absolute;
@@ -502,7 +502,7 @@ a:hover                        { text-decoration:none; }
             }
             .btn-blue {
                 position: relative;
-                padding: 0 45px 0 20px;
+                padding: 0 20px;
                 margin-right: 20px;
                 font: 16px 'SkodaPro_Medium';
                 color: #fff;
@@ -516,6 +516,9 @@ a:hover                        { text-decoration:none; }
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
+            .bottom-add-search .btn-blue {
+                padding: 0 45px 0 20px;
+            }
             .btn-blue:hover {
                 background-image: url("../images/content/btn_blue_hover.jpg");
             }
@@ -524,7 +527,8 @@ a:hover                        { text-decoration:none; }
             }
 
     .main-content {
-        margin: 0 20px;
+        overflow: hidden;
+        margin: 0 20px 15px;
     }
         .main-content h2 {
             font-size: 18px;
@@ -674,4 +678,80 @@ a:hover                        { text-decoration:none; }
 	body {
 		background-size: 100% 100%;
 	}
+}
+
+
+/*---POPUP---*/
+.mymagicoverbox_fenetre {
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    width: 200px;
+    margin-left: -100px;
+    display: none;
+}
+
+#bg-popup {
+    display: none;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.wrap-form {
+    overflow: hidden;
+    background: #199d50;
+    color: #fff;
+    font: 16px 'SkodaPro_Bold';
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.wrap-form .name {
+    display: block;
+    padding: 6px 20px 7px;
+    font: 16px 'SkodaPro_Bold';
+    background: #49bc62;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #96d7a5;
+}
+.list-popup {
+    margin: 10px 20px;
+}
+.list-popup li {
+    margin-bottom: 10px;
+}
+.list-popup .text {
+    display: inline-block;
+    margin-bottom: 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.list-popup .input-text {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid #a7b0b8;
+    background: #fff;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 3px 12px 0px rgba(0,0,0,0.2);
+}
+.list-popup .btn-blue {
+    width: 100%;
+    border: none;
+}
+.btn-remember .text {
+    margin-left: 5px;
 }

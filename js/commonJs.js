@@ -26,4 +26,14 @@ $(document).ready(function(){
         $('#add-search').slideToggle();
         $(this).parent().toggleClass('active');
     });
+
+    $("#btn-popup-login").click(function(){
+        $('#bg-popup').fadeIn(300);
+        $('#box_1').fadeIn(300);
+    });
+
+    $('#bg-popup').click(function () {
+        $('#bg-popup').fadeOut(300);
+        $('#box_1').fadeOut(300);
+    });
 });
